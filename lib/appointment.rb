@@ -21,5 +21,5 @@ class Appointment
   def doctors
     self.doctor
   end
-  
+
 end
