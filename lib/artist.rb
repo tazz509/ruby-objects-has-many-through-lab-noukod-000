@@ -3,15 +3,15 @@ require 'pry'
 class Artist
 
   attr_accessor :name, :artist, :genre
-  all = []
+  @@all = []
 
   def initialize(name)
     @name = name
-    all << self
+    @@all << self
   end
 
   def self.all
-    all
+    @@all
   end
 
   def new_song(name, genre)
@@ -30,5 +30,5 @@ class Artist
       song.genre
     end
   end
-  
+
 end
